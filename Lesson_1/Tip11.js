@@ -1,3 +1,5 @@
+//Podemos repasar como se hacen las promesas en JS?
+
 function getSensorAData() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {

@@ -13,3 +13,5 @@ function test() {
 //2 options for binding "this" to the object inside the function, for the call of it.
 test.call(obj); 
 test.apply(obj);
+
+//Es lo mismo que obj.test() ??

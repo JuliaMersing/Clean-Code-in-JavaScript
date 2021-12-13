@@ -8,6 +8,8 @@
 
 draw(null, { margin: 100, padding: 50 }); */
 
+// ¿Por qué no se usa elemnt?
+
 function draw(element, config) {
   let defaults = {
     width: 200,
