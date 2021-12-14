@@ -1,3 +1,6 @@
+//TIp 10.  Avoid flags
+
+
 function printAllToDoes(todos) {
   for (let todo of todos) {
     console.log(todo.task);

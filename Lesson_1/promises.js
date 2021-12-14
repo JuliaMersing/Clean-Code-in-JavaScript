@@ -1,4 +1,4 @@
-//Podemos repasar como se hacen las promesas en JS?
+//Tip 11. Avoid Callbacks, use promises instead
 
 function getSensorAData() {
   return new Promise((resolve, reject) => {

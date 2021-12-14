@@ -1,3 +1,5 @@
+//Tip 9. Reduce number of arguments
+
 function draw(element, config) {
   element.style.width = config.width;
   element.style.height = config.height;
