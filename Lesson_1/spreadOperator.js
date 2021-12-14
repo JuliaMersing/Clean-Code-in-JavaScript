@@ -1,7 +1,9 @@
 //Tip 12. Use object.assing or the spread operator for default arguments
 
 
-/* function draw(element, config) {
+/* No refactored code
+
+function draw(element, config) {
   config.width = config.width || 200;
   config.height = config.height || 200;
   config.margin = config.margin || 28;
@@ -12,6 +14,8 @@
 draw(null, { margin: 100, padding: 50 }); */
 
 // ¿Por qué no se usa elemnt?
+
+//Using spread operator
 
 function draw(element, config) {
   let defaults = {
