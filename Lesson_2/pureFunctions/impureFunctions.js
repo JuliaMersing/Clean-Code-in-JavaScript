@@ -1,5 +1,11 @@
 'use strict'
 //Impure functions (methods of the class). This code will work but methos are impure:
+let user = {
+    id : 7654,
+    firstName : "Ada",
+    lastName : "Lovelace"
+};
+
 class ProfileManager {
     constructor(user){
         this.user = user;
@@ -16,11 +22,7 @@ class ProfileManager {
         this.profileUrl = `${this.domain}${this.userName}`;
     }
 }
-let user = {
-    id : 7654,
-    firstName : "Ada",
-    lastName : "Lovelace"
-};
+
 let manager = new ProfileManager(user);
 manager.createUserName();
 manager.createProfileUrl();
