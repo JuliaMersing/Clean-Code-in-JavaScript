@@ -1,3 +1,5 @@
+//1.5 All about this
+
 'use strict';
 function Person(firstName, lastName, age) {
     this.firstName = firstName;
@@ -8,6 +10,6 @@ function Person(firstName, lastName, age) {
 
 let p = new Person("Ada", "Lovelace", 30);// DOUBT: ¿por qué cuando se inicializa (¿o instancia?) un objeto se usa la keyword "let" y no "const"?
 console.log(p); 
-console.log(Person);
+
 
 //DOUBT: What about if there were more objects?
