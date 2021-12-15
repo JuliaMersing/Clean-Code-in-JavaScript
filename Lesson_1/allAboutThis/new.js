@@ -10,6 +10,5 @@ function Person(firstName, lastName, age) {
 
 let p = new Person("Ada", "Lovelace", 30);
 console.log(p); 
-
-
-//DOUBT: What about if there were more objects?
+let a = new Person("Julia", "Lovelace", 30);
+console.log(a); 

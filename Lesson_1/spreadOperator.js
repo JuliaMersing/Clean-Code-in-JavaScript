@@ -17,7 +17,7 @@ draw(null, { margin: 100, padding: 50 }); */
 
 //Using spread operator
 
-function draw(element, config) {
+function draw(config) {
   let defaults = {
     width: 200,
     height: 200,
