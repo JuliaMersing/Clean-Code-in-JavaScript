@@ -1,8 +1,10 @@
+// 1.5 All about this
+
 'use strict';
 const obj = {
-    a = 1,
-    b = 2,
-    c = 3
+    a: 1,
+    b: 2,
+    c: 3
 }
 
 function test(){

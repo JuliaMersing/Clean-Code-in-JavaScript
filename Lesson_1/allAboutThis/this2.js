@@ -1,9 +1,11 @@
+//1.5 All about this
+
 'use strict';
 let a = 92; //Variables declared with "let" are not part of the global object. 
 const obj = {
-    a = 1,
-    b = 2,
-    c = 3
+    a: 1,
+    b: 2,
+    c: 3
 }
 
 function test() {

@@ -17,7 +17,7 @@ class ProfileManager {
         let random = Math.floor(Math.random()* 100000);
         this.username = `${this.user.firstName}.${this.user.lastName}.${random}`;
     }
-    //DOUBT: Is what I understand correct for the second function?
+    //DOUBT: Is the following comment correct?
     createProfileUrl(){//This is also IMPURE because asumes that "userName" variable (a shared state) is already filled by the previous method.  
         this.profileUrl = `${this.domain}${this.userName}`;
     }
