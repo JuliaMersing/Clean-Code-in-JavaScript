@@ -10,7 +10,7 @@ const obj = {
 }
 
 function test() {
-    console.log(this.a);
+    console.log(a);
 }
 
 test(); //"This" is bound to the global object. It refers to the variable "a" in the global scope

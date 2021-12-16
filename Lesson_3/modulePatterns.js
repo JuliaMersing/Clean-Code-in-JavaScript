@@ -3,7 +3,7 @@ function ModuleLoader(){
     const modules = {};
     
     function getInstance(name){//It searches for the modules and implements them
-        if(modules[name]){ //¿DOUBT: Esto es una forma de acceder a la propiedad de un objeto?
+        if(modules[name]){ 
             return modules[name];
         }
         else {
