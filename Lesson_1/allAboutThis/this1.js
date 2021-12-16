@@ -1,6 +1,6 @@
 //1.5 All about this
 
-'use strict';
+//'use strict';
 const a = 92; //Variables declared with "const" are part of the global object (!= let)
 
 const obj = {
