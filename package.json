@@ -1,0 +1,23 @@
+{
+  "name": "clean-code-in-javascript",
+  "version": "1.0.0",
+  "description": "clean code javascript project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliaMersing/Clean-Code-in-JavaScript.git"
+  },
+  "author": "Julia Mersing and Natalia Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuliaMersing/Clean-Code-in-JavaScript/issues"
+  },
+  "homepage": "https://github.com/JuliaMersing/Clean-Code-in-JavaScript#readme",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
