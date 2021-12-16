@@ -4,4 +4,4 @@ define("http-client", [], function HttpClient(){
             return fetch(url).then(response => response.json());
         }
     }
-});
+})
