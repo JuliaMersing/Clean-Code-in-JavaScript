@@ -1,4 +1,4 @@
-export function greet(person) {// Person class is import as an argument?
+export function greet(person) {// DOUBT: Person class is import as an argument?
     console.log(`Hello ${person.firstName}`);
 }
 

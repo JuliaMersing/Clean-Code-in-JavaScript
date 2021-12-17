@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "toastr": "^2.1.4",
     "webpack": "^5.65.0"
   },
   "devDependencies": {
