@@ -7,4 +7,4 @@ http.get("https://httpstat.us/404").then(data => {
 })
 
 //DOUBT: Si cambiamos el numero de error, no cambia el mensaje que vería el usuario
-//DOUBT: Aparece un undifined en la consola, que no sabemos de donde sale 
+//DOUBT: Aparece un undifined en la consola, que no sabemos de donde sale...
