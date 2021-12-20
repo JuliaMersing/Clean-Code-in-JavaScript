@@ -1,7 +1,7 @@
 //Import the const variable from config.js using destructuring. It is ready to be used in the get() method in the line 11.
 import { POSTS_ENDPOINT } from "./config";
 
-//This module has the httpClient dependency.We take the httpClient instance and put it inside the postManager instance.DOUBT: ¿cuál es la instance? ¿Es una instacia como nuevo objeto? ¿Dónde se está haciendo esto?
+//This module has the httpClient dependency.We take the httpClient instance and put it inside the postManager instance.DOUBT: ¿cuál es la instance?¿Dónde se está haciendo esto?
 export class PostManager {
     constructor(httpClient){
         this.httpClient = httpClient;

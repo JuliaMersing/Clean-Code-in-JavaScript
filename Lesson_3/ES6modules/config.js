@@ -1,2 +1,2 @@
 //File to store URLs, endpoints, configuration properties...
-export const POSTS_ENDPOINT = "https://jsonplaceholder.com.typicode.com/posts";//DOUBT:¿Por qué lo nombran con mayúscula? ¿Hay algún criterio para ello?
+export const POSTS_ENDPOINT = "https://jsonplaceholder.com.typicode.com/posts";
