@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _http_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./http-client */ \"./http-client.js\");\n\n\nlet http = new _http_client__WEBPACK_IMPORTED_MODULE_0__.HttpClient();\n\nhttp.get(\"https://httpstat.us/401\").then(data => {\n    console.log(data);\n})\n\n//DOUBT: Si cambiamos el numero de error, no cambia el mensaje que vería el usuario\n//DOUBT: Aparece un undifined en la consola, que no sabemos de donde sale \n\n//# sourceURL=webpack://lesson_4/./app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _http_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./http-client */ \"./http-client.js\");\n\n\nlet http = new _http_client__WEBPACK_IMPORTED_MODULE_0__.HttpClient();\n\nhttp.get(\"https://httpstat.us/404\").then(data => {\n    console.log(data);\n})\n\n\n//# sourceURL=webpack://lesson_4/./app.js?");
 
 /***/ }),
 
@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _htt
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ErrorHandler\": () => (/* binding */ ErrorHandler)\n/* harmony export */ });\n/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! toastr */ \"./node_modules/toastr/toastr.js\");\n/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(toastr__WEBPACK_IMPORTED_MODULE_0__);\n\n\nclass ErrorHandler {\n    static handle(response) {\n        if(response.status == 401) {\n            toastr__WEBPACK_IMPORTED_MODULE_0__.error(\"You are not authorized to view this content\");\n        }\n    else if (response.status == 404) {\n        toastr__WEBPACK_IMPORTED_MODULE_0__.warning(\"Content not found\");\n    }\n    else if (response.status == 500) {\n        toastr__WEBPACK_IMPORTED_MODULE_0__.error(\"Internal server error\");\n    }\n    else {\n        toastr__WEBPACK_IMPORTED_MODULE_0__.info(\"Unknown error\");\n}\n    }\n}\n\n\n//# sourceURL=webpack://lesson_4/./error-handler.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ErrorHandler\": () => (/* binding */ ErrorHandler)\n/* harmony export */ });\n/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! toastr */ \"./node_modules/toastr/toastr.js\");\n/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(toastr__WEBPACK_IMPORTED_MODULE_0__);\n\n\nclass ErrorHandler {\n    static handle(response) {\n        if(Response.status == 401) {\n            toastr__WEBPACK_IMPORTED_MODULE_0__.error(\"You are not authorized to view this content\");\n        }\n    else if (Response.status == 404) {\n        toastr__WEBPACK_IMPORTED_MODULE_0__.warning(\"Content not found\");\n    }\n    else if (Response.status == 500) {\n        toastr__WEBPACK_IMPORTED_MODULE_0__.error(\"Internal server error\");\n    }\n    else {\n        toastr__WEBPACK_IMPORTED_MODULE_0__.info(\"Unknown error\");\n}\n    }\n}\n\n\n//# sourceURL=webpack://lesson_4/./error-handler.js?");
 
 /***/ }),
 

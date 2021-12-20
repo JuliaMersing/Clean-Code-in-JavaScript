@@ -5,15 +5,13 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js",
-    "start": "webpack serve"
+    "build": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "toastr": "^2.1.4",
-    "webpack": "^5.65.0",
-    "webpack-dev-server": "^4.6.0"
+    "webpack": "^5.65.0"
   },
   "devDependencies": {
     "webpack-cli": "^4.9.1"
