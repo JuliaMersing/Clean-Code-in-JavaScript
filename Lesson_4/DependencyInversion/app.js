@@ -2,8 +2,8 @@ import * as Bottle from "bottlejs";
 import { HttpClient } from "./http-client";
 import { PostsManager } from "./posts-manager";
 
-const bottle = new Bottle();
-bottle.service("HttpClient", HttpClient);
+const bottle = new Bottle();//DOUBT: ¿Cuándo sí y no se puede poner "new"?
+bottle.service("HttpClient", HttpClient);//DOUBT: Eesto es un registro de constructor. Entonces, ¿qué están haciendo exactamente estas líneas?
 bottle.service("PostsManager", PostsManager, "HttpClient"); //There is just one dependency
 
 let PostsManager = bottle.container.PostManager; //This get the instance back
