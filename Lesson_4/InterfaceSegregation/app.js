@@ -26,7 +26,7 @@ class Line extends Shape {
 function ShapeStats(shapes) {
   console.log("Shape stats: ");
   for (let shape of shapes) {
-    if (shape.calculateArea) {
+    if (shape.calculateArea) {//When a new object is included in the shapes array, the solution is to add a condition inside the loop that checks out the existence of a method and activates it or not, but making the shapesStats() function applicable to every element of the array
       console.log(`${shape.name} has area of ${shape.calculateArea()}cm^2`);
     }
   }
