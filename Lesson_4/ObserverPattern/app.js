@@ -1,4 +1,4 @@
-class Car {
+class Car { //Subject
   constructor() {
     this._currentSpeed = 0;
     this.speedObserver = []; //Each property has his own observer, so had to have differents array

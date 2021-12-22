@@ -41,11 +41,11 @@ class PostsServiceFactory {
                 comments : "https://jsonplaceholder.typicode.com/comments"
             }
         }
-    //These 2 following lines are the unique initialization of the PostsService class. DOUBT: ¿ESTO ES EL SINGLETON?
+    //These 2 following lines are the unique initialization of the PostsService class. DOUBT: 
     this.postsService = new PostsService();
     this.postsService.configure(config);
     }
-    //This method obtains an instance of PostService class.: 
+    //This method obtains an instance of PostService class.: DOUBT: Según google, lo que viene después de getInstance() es el Singleton
     getInstance() {
         if(!this.postsService) {
             this.prepareInstance();
