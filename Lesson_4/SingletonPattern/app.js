@@ -4,7 +4,7 @@ class HttpClient {
     }
 }
 
-class PostService {
+class PostsService {
     configure(config){
         this.configureHttpClient(config);
         this.configureEndpoints(config);
@@ -31,6 +31,28 @@ class PostService {
     }
 }
 
-class PostServiceFactory{
-    prepareInstance(){}
+class PostsServiceFactory {
+    prepareInstance(){
+        let config = {
+            httpClient : new HttpClient(),
+            endpoints : {
+                posts : "https://jsonplaceholder.typicode.com/posts",
+                comments : "https://jsonplaceholder.typicode.com/comments"
+            }
+        }
+    this.postsService = new PostsService();
+    this.postsService.configure(config);
+    }
+    
+    getInstance() {
+        if(!this.postsService) {
+            this.prepareInstance();
+        }
+        return this.postsService;
+    }
+
 }
+let postsServiceFactory = new PostsServiceFactory();
+let postsService = postsServiceFactory.getInstance();
+postsService.getPosts();
+postsService.getComments();
