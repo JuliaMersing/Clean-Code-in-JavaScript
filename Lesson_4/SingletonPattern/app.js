@@ -24,7 +24,7 @@ class PostsService {
         this.commentsEndpoints = config.endpoints.comments;
     }
     getPosts(){
-        return this.httpClient.get(this.postEndpoints);
+        return this.httpClient.get(this.postEndpoints);//
     }
     getComments(){
         return this.httpClient.get(this.commentsEndpoints);
@@ -55,7 +55,7 @@ class PostsServiceFactory {
 
 }
 //These 2 lines are the initialization following the singleton pattern:
-let postsServiceFactory = new PostsServiceFactory();
+let postsServiceFactory = new PostsServiceFactory(); //DOUBT: Pero siempre vamos a tener que escribir "new" para instanciar la factory!! Aquí no ahorramos en "new"s... ¿Se hace esto entonces sólo para simplificar una inicialización que es complicada?
 let postsService = postsServiceFactory.getInstance();
 //These 2 lines are two ways to access to different methods of the previously initialized PostsService class, 
 postsService.getPosts();
