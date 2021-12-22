@@ -25,6 +25,7 @@ class Car {// This is the subject
       observer.notify(newVal, oldVal);
     }
   }
+  //DOUBT: ¿¿Por qué no se dejar escrito el getter y el setter antes de todos estos métodos?? ¿Por qué sigue este orden "raro"?
  //The getter and the setter are accessors. DOBUT: ¿Cómo funcionan exactmente?
   get currentSpeed() {
     return this._currentSpeed;
@@ -49,7 +50,7 @@ class DOMCarSpeedObserver {//It is an observer. Notice that it has a notify func
   constructor(selector) {
     this.textField = document.querySelector(selector);
   }
-  notify(newVal, oldVal) {
+  notify(newVal, oldVal) { //DOUBT: ¿no está cogiendo "oldVal" pq no lo estamos usando? ¿Podríamos quitarlo?
     this.textField.textContent = newVal;
   }
 }
@@ -58,6 +59,7 @@ let car = new Car();
 let consoleObserver = new CurrentSpeedConsoleObserver();
 let domObserver = new DOMCarSpeedObserver("#speedometer");
 car.subscribeSpeedObserver(consoleObserver);
+car.subscribeSpeedObserver(domObserver);
 
 //Modifying the speed. Example 1:
 /*car.currentSpeed += 10;//DOUBT: ¿Por que´no escribirlo así: car._currentSpeed = 10 ?

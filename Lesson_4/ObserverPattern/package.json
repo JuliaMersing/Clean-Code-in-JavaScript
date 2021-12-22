@@ -1,0 +1,16 @@
+{
+  "name": "observerpattern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+      "build": "webpack --progress",
+      "start": "webpack-dev-server --progress --colors",
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.65.0"
+  }
+}
