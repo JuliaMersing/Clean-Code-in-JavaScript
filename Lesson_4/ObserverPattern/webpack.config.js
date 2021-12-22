@@ -1,12 +1,12 @@
 'use strict'
 
 module.exports = {
-    entry : "./app.js", // This path is different from the video one
+    entry : "./app.js", 
     mode: "production",
     output : {
-        filename : "bundle.min.js" // "bundle.min.js"
+        filename : "bundle.min.js" // The use of "min" is a convention to name a minimized file.
     },
     resolve: {
-        modules: ['node_modules'],// This path is different from the video one
+        modules: ['node_modules'],
       }
 }
