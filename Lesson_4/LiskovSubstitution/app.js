@@ -36,7 +36,7 @@ class DiscountProduct extends Product {
     let discounted = {
       name: this.name,
       price: this.price - this.price * this.discount,
-    };//DOUBT: Este codigo no lo utilizamos, que función tiene?
+    };
     storage.store(discounted);
     //return discounted; Violates LSP
     return storage.lenght; // The save method return the number of product inserted
