@@ -41,7 +41,7 @@ class PostsServiceFactory {
                 comments : "https://jsonplaceholder.typicode.com/comments"
             }
         }
-    //These 2 following lines are the unique initialization of the PostsService class. DOUBT: 
+    //These 2 following lines are the unique initialization of the PostsService class. 
     this.postsService = new PostsService();
     this.postsService.configure(config);
     }

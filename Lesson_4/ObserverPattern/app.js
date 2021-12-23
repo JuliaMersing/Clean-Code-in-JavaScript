@@ -25,7 +25,7 @@ class Car {// This is the subject
       observer.notify(newVal, oldVal);
     }
   }
-  //DOUBT: ¿¿Por qué no se dejar escrito el getter y el setter antes de todos estos métodos?? ¿Por qué sigue este orden "raro"?
+  //DOUBT: ¿¿Por qué no se deja escrito el getter y el setter antes de todos estos métodos?? ¿Por qué sigue este orden "raro"?
  //The getter and the setter are accessors. DOBUT: ¿Cómo funcionan exactmente?
   get currentSpeed() {
     return this._currentSpeed;
