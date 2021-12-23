@@ -32,7 +32,7 @@ class PostsService {
 }
 
 //This is the factory that contains the unique initialization of PostServices in order to not use "new" keyword every time we need an instance of it. 
-class PostsServiceFactory {
+export class PostsServiceFactory {
     prepareInstance(){
         let config = {
             httpClient : new HttpClient(),
@@ -45,7 +45,7 @@ class PostsServiceFactory {
     this.postsService = new PostsService();
     this.postsService.configure(config);
     }
-    //This method obtains an instance of PostService class.: DOUBT: Según google, lo que viene después de getInstance() es el Singleton
+    //This method obtains an instance of PostService class.
     getInstance() {
         if(!this.postsService) {
             this.prepareInstance();
@@ -55,8 +55,12 @@ class PostsServiceFactory {
 
 }
 //These 2 lines are the initialization following the singleton pattern:
-let postsServiceFactory = new PostsServiceFactory(); //DOUBT: Pero siempre vamos a tener que escribir "new" para instanciar la factory!! Aquí no ahorramos en "new"s... ¿Se hace esto entonces sólo para simplificar una inicialización que es complicada?
+let postsServiceFactory = new PostsServiceFactory(); 
+
+
+
 let postsService = postsServiceFactory.getInstance();
 //These 2 lines are two ways to access to different methods of the previously initialized PostsService class, 
 postsService.getPosts();
 postsService.getComments();
+

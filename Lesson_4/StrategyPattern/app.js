@@ -3,7 +3,7 @@ import { ErrorHandler } from "./error-handler";
 import { ToastrHandler } from "./toastr-handler";
 
 //(This is a factory function)
-function configureErrorHandler() {//DOUBT: ¿Para qué hacer la factory si al final ella misma se va a guardar en una variable global?
+function configureErrorHandler() {
   let errorHandler = new ErrorHandler(new ToastrHandler());
   return errorHandler;
 }

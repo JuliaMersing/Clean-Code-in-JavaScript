@@ -1,6 +1,7 @@
 class Car {// This is the subject
+
   constructor() {
-    this._currentSpeed = 0;//DOUBT: ¿Por qué nombrar esta variable con guión bajo?
+    this._currentSpeed = 0;//DOUBT: ¿Por qué nombrar esta variable con guión bajo? Variable de acceso privado, no es accesible desde fuera 
     this.speedObservers = []; //Each property has his own observer, so has to have a different array
   }
 
@@ -25,13 +26,13 @@ class Car {// This is the subject
       observer.notify(newVal, oldVal);
     }
   }
-  //DOUBT: ¿¿Por qué no se deja escrito el getter y el setter antes de todos estos métodos?? ¿Por qué sigue este orden "raro"?
+  
  //The getter and the setter are accessors. DOBUT: ¿Cómo funcionan exactmente?
   get currentSpeed() {
     return this._currentSpeed;
   }
 
-  set currentSpeed(value) {//DOUBT: ¿Esto se está ejecutando todo el tiempo? Pq no veo su llamada...
+  set currentSpeed(value) {
     let oldVal = this._currentSpeed;
     this._currentSpeed = value;
     if (this._currentSpeed != oldVal) {
@@ -50,7 +51,7 @@ class DOMCarSpeedObserver {//It is an observer. Notice that it has a notify func
   constructor(selector) {
     this.textField = document.querySelector(selector);
   }
-  notify(newVal, oldVal) { //DOUBT: ¿no está cogiendo "oldVal" pq no lo estamos usando? ¿Podríamos quitarlo?
+  notify(newVal) { 
     this.textField.textContent = newVal;
   }
 }
@@ -70,7 +71,7 @@ car.currentSpeed += 10;*/
 
 //Modifying the speed. Example 2:
 let interval = setInterval(() => {
-    car.currentSpeed += 10;
+    car.speed += 10;
   }, 2000);
 
 setTimeout(() => {

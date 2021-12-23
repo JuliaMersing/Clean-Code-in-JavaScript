@@ -2,7 +2,7 @@
 import * as toastr from "toastr";
 
 export class ToastrHandler {
-  handle(title, body) {//Doubt: Sería lo mismo escribir aquí (errorTitle, errorBody)??
+  handle(title, body) {
     toastr.error(`${title} - ${body}`);
   }
 }

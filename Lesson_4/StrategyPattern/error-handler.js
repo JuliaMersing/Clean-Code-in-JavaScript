@@ -7,7 +7,8 @@ export class ErrorHandler {
   }
 
   handle(errorTitle, errorBody, errorObject) {//This method is the common interface
-    this.handler.handle(errorTitle, errorBody); //DOUBT No entiendo... ¿Qué hace el handle()?
+    this.handler.handle(errorTitle, errorBody);
     //do something with errorObject
   }
 }
+
