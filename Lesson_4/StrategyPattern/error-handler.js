@@ -1,5 +1,5 @@
 export class ErrorHandler {
-  constructor(handler) {
+  constructor(handler) { 
     if (!handler || !handler.handle) {
       throw new Error("Provided handler is invalid");
     }
