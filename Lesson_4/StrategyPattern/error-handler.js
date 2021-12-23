@@ -7,7 +7,7 @@ export class ErrorHandler {
   }
 
   handle(errorTitle, errorBody, errorObject) {
-    this.handler.handle(errorTitle, errorBody); //DOUBT: ¿¿Un método que se contiene a sí mismo?? No entiendo... ¿Qué hace el handle()?
+    this.handler.handle(errorTitle, errorBody); //DOUBT No entiendo... ¿Qué hace el handle()?
     //do something with errorObject
   }
 }
