@@ -1,3 +1,4 @@
+//It will print a user-friendly message 
 import * as toastr from "toastr";
 
 export class ToastrHandler {
