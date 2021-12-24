@@ -41,6 +41,8 @@ export class PostsServiceFactory {
                 comments : "https://jsonplaceholder.typicode.com/comments"
             }
         }
+    //DOUBT: Si queremos volver a utilizar la factory, deberíamos reasignarle otros urls. ¿Cómo accedemos y cambiamos esos URLs?
+
     //These 2 following lines are the unique initialization of the PostsService class. 
     this.postsService = new PostsService();
     this.postsService.configure(config);
