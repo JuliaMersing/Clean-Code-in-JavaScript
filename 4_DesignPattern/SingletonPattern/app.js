@@ -41,7 +41,6 @@ export class PostsServiceFactory {
                 comments : "https://jsonplaceholder.typicode.com/comments"
             }
         }
-    //DOUBT: Si queremos volver a utilizar la factory, deberíamos reasignarle otros urls. ¿Cómo accedemos y cambiamos esos URLs?
 
     //These 2 following lines are the unique initialization of the PostsService class. 
     this.postsService = new PostsService();
@@ -58,8 +57,6 @@ export class PostsServiceFactory {
 }
 //These 2 lines are the initialization following the singleton pattern:
 let postsServiceFactory = new PostsServiceFactory(); 
-
-
 
 let postsService = postsServiceFactory.getInstance();
 //These 2 lines are two ways to access to different methods of the previously initialized PostsService class, 
