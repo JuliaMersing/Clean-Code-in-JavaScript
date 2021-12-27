@@ -1,10 +1,10 @@
-const {BinaryTreeNode} = require('../app/binary-tree-node');
-const {BinaryTreeOps} = require('../app/binary-tree-ops');
+const {BinaryTreeNode} = require('../binary-tree-node')
+const {BinaryTreeOps} = require('../binary-tree-ops');
 
 describe("BinaryTreeOps", () => {
     let testTree;
 
-    beforeEach (() => {
+    beforeEach (() => { //beforeEach() is run before each test in a describe
         testTree = new BinaryTreeNode(4,
                             new BinaryTreeNode(6,
                                 new BinaryTreeNode(2),

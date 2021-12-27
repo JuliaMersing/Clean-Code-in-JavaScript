@@ -1,4 +1,6 @@
-const { BinaryTreeNode } = require('./binary-tree-node');
+//Esta parte no funciona en el testing
+
+const { BinaryTreeNode } = require('./RedPart/binary-tree-node');
 
 class BinaryTreeOps {
     static InOrder(root) {
