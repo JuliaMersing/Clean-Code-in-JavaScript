@@ -5,45 +5,45 @@ const {BinaryTreeNode} = require('./binary-tree-node');
 class BinaryTreeOps {
     static InOrder(root) {
         let results = "";
-        traverseInOrder(root);
+        traverse(root);
         return results;
 
-        function traverseInOrder(root) {
+        function traverse(root) {
             if(!root) {
                 return;
             }
-            traverseInOrder(root.left);
+            traverse(root.left);
             results += `${root.value}`;
-            traverseInOrder(root.right);
+            traverse(root.right);
         }
     }
 
     static preOrder(root) {
         let results = "";
-        traversePreOrder(root);
+        traverse(root);
         return results;
 
-        function traversePreOrder(root) {
+        function traverse(root) {
             if(!root) {
                 return;
             }
             results += `${root.value}`;
-            traversePreOrder(root.left);
-            traversePreOrder(root.right);
+            traverse(root.left);
+            traverse(root.right);
 }
     }
 
 static postOrder(root) {
     let results = "";
-    traversePostOrder(root);
+    traverse(root);
     return results;
 
-    function traversePostOrder(root) {
+    function traverse(root) {
         if(!root) {
             return;
         }
-        traversePostOrder(root.left);
-        traversePostOrder(root.right);
+        traverse(root.left);
+        traverse(root.right);
         results += `${root.value}`;
 }
 }
